@@ -1,0 +1,23 @@
+.drop-column {
+  border: 3rem solid transparent;
+  transition: border-color 0.2s;
+  margin: 3px;
+  flex-wrap: wrap;
+  &.p-draggable-enter {
+    border-color: var(--primary-color);
+  }
+}
+.list {
+  justify-content: center;
+  align-items: center;
+}
+.card-item {
+  font-size: medium;
+  height: fit-content;
+  padding-right: 1vw;
+  color: orange;
+}
+
+[pDraggable] {
+  cursor: move;
+}

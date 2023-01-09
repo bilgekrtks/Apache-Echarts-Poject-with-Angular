@@ -1,0 +1,12 @@
+<div class="flex navbar">
+  <span>MENU</span>
+  <span (click)="getHome()">HOME </span>
+  <select [ngModel]="selection" (ngModelChange)="getFilter($event)">
+    <option
+      [value]="category.id"
+      *ngFor="let category of listCategories$ | async"
+    >
+      {{ category.typeName }}
+    </option>
+  </select>
+</div>

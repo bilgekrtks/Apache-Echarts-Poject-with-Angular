@@ -1,0 +1,26 @@
+<div class="flex list">
+  <div *ngFor="let card of cardsList$ | async">
+    <div
+      class="card-item"
+      pDraggable="cards"
+      (onDragStart)="dragStart(card)"
+      (onDragEnd)="dragEnd()"
+    >
+      <h5>{{ card.title }}</h5>
+    </div>
+  </div>
+</div>
+<div class="flex flex-column md:flex-column">
+  <div
+    class="flex gap-5 align-items-center justify-content-center drop-column"
+    pDroppable="cards"
+    (onDrop)="drop()"
+  >
+    <p-card header="{{ card.title }}" *ngFor="let card of selectedCharts">
+      <app-create-chart
+        [chartId]="card.id"
+        [selectedChart]="card"
+      ></app-create-chart>
+    </p-card>
+  </div>
+</div>

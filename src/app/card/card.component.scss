@@ -1,0 +1,20 @@
+.card {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 7vh;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 1vw;
+  transition: all ease 0.2s;
+}
+
+p-card {
+  font-style: italic;
+  text-align: center;
+  color: greenyellow;
+  transition: all ease 0.2s;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,61 @@
+.navbar {
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  border: 1px;
+  height: 6vh;
+  font-weight: bold;
+  box-shadow: 0 3px 7px 0 rgba(138, 139, 219, 0.2),
+    0 5px 18px 0 rgba(146, 88, 240, 0.19);
+}
+
+span {
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-inline: 2vw;
+  background-image: linear-gradient(to right, #e79b33, #e79b33 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+select:before,
+span:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+}
+
+select:hover,
+span:hover {
+  background-position: 0;
+}
+
+
+select {
+  margin: 5px;
+  border: none;
+  outline: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  border-style: none;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #e79b33, #e79b33 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}

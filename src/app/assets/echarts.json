@@ -1,0 +1,223 @@
+{
+  "chartsOption": [
+    {
+      "id": 1,
+      "title": "Brands",
+      "categoryId": "2",
+      "categoryName": "bar",
+      "options": {
+        "xAxis": {
+          "type": "category",
+          "data": ["apple", "microsoft", "saudi aramco", "alphabet", "amazon"],
+          "overflow": "truncate",
+          "rotate": 30
+        },
+
+        "yAxis": {
+          "type": "value"
+        },
+        "series": [
+          {
+            "type": "bar",
+            "data": [2431, 1920, 1870, 1479, 1155]
+          }
+        ],
+        "dataZoom": [
+          {
+            "type": "inside"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "title": "Ads",
+      "categoryId": "2",
+      "categoryName": "bar",
+      "options": {
+        "tooltip": {
+          "trigger": "axis",
+          "axisPointer": {
+            "type": "shadow"
+          }
+        },
+        "legend": {},
+        "grid": {
+          "left": "3%",
+          "right": "4%",
+          "bottom": "3%",
+          "containLabel": true
+        },
+        "xAxis": {
+          "type": "value"
+        },
+        "yAxis": {
+          "type": "category",
+          "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+        },
+        "series": [
+          {
+            "name": "Direct",
+            "type": "bar",
+            "stack": "total",
+            "label": {
+              "show": true
+            },
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [320, 302, 301, 334, 390, 330, 320]
+          },
+          {
+            "name": "Mail Ad",
+            "type": "bar",
+            "stack": "total",
+            "label": {
+              "show": true
+            },
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [120, 132, 101, 134, 90, 230, 210]
+          },
+          {
+            "name": "Affiliate Ad",
+            "type": "bar",
+            "stack": "total",
+            "label": {
+              "show": true
+            },
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [220, 182, 191, 234, 290, 330, 310]
+          },
+          {
+            "name": "Video Ad",
+            "type": "bar",
+            "stack": "total",
+            "label": {
+              "show": true
+            },
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [150, 212, 201, 154, 190, 330, 410]
+          },
+          {
+            "name": "Search Engine",
+            "type": "bar",
+            "stack": "total",
+            "label": {
+              "show": true
+            },
+            "emphasis": {
+              "focus": "series"
+            },
+            "data": [820, 832, 901, 934, 1290, 1330, 1320]
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": "Population",
+      "categoryId": "4",
+      "categoryName": "pie",
+      "options": {
+        "tooltip": {
+          "trigger": "item"
+        },
+        "legend": {
+          "orient": "vertical",
+          "left": "left"
+        },
+        "series": [
+          {
+            "name": "Access From",
+            "type": "pie",
+            "radius": "50%",
+            "data": [
+              {
+                "value": 225200000,
+                "name": "Pakistan"
+              },
+              {
+                "value": 271350000,
+                "name": "Indonesia"
+              },
+              {
+                "value": 331449281,
+                "name": "Usa"
+              },
+              {
+                "value": 1376238018,
+                "name": "India"
+              },
+              {
+                "value": 1407692960,
+                "name": "China"
+              }
+            ],
+            "emphasis": {
+              "itemStyle": {
+                "shadowBlur": 10,
+                "shadowOffsetX": 0,
+                "shadowColor": "rgba(0, 0, 0, 0.5)"
+              }
+            }
+          }
+        ]
+      }
+    },
+
+    {
+      "id": 2,
+      "title": "Cars",
+      "categoryId": "3",
+      "categoryName": "line",
+      "options": {
+        "xAxis": {
+          "type": "category",
+          "data": [
+            "Rolls Royce Boat Tail",
+            "Bugatti La Voiture Noire",
+            "Pagani Zonda HP Barchetta",
+            "Rolls Royce Sweptail"
+          ],
+          "overflow": "truncate"
+        },
+
+        "yAxis": {
+          "type": "value"
+        },
+        "series": [
+          {
+            "data": [28000000000, 18900000000, 17500000000, 12800000000],
+            "type": "line",
+            "smooth": true
+          }
+        ]
+      }
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "typeName": "ALL CHARTS"
+    },
+    {
+      "id": 2,
+      "typeName": "BAR CHARTS"
+    },
+    {
+      "id": 3,
+      "typeName": "LINE CHARTS"
+    },
+    {
+      "id": 4,
+      "typeName": "PIE CHARTS"
+    }
+  ]
+}
